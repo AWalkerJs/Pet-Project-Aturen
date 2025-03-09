@@ -320,4 +320,17 @@ const popupMenu = document.getElementById('popupMenu');
 
 menuButton.addEventListener('click', function() {
     popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+   
 });
+
+// let clickerPopUpContent = document.querySelector('.container');
+
+// popupMenu.addEventListener("click", function (eve) {
+//     // Проверка, где был сделал клик, внутри попАп контента или снаружи
+//     const isClickOutside = !eve.composedPath().includes(clickerPopUpContent);
+
+//     // Если снаружи, то тоглим класс на закрытие!
+//     if (isClickOutside) {
+//         popupMenu.style.display = 'none' ;
+//     }
+// })
