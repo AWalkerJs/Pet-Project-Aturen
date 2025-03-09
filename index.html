@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <br>
+
+
+    Kol-vo Stoek
+    <input type="number" min="2" value="3" inputmode="numeric" id="stoykaCount"> <br>
+    Kol-vo Rigeley
+    <input type="number" min="2" value="3" inputmode="numeric" id="rigelCount"> <br>
+    
+    Выбор стойки
+    <select id="verticalSelect">
+        
+    </select> <br>
+    
+    Выбор ригеля
+    <select id="horizontSelect">
+        
+    </select> <br>
+    
+    Заполнение
+    <select id="glassSelect">
+        
+    </select> <br>
+    Стоимость своего заполнения м2
+    <input type="number" min="0" inputmode="numeric" id="inputTest" value="0" disabled> <br>
+
+
+    Ширина конструкции 
+    <input type="number" min="1" inputmode="numeric" id="width" value="2000"> мм<br>
+    Высота конструкции 
+    <input type="number" min="1" inputmode="numeric" id="height" value="4000"> мм<br>
+    Процент наценки
+    <input type="number" min="0" max="200" inputmode="numeric" id="priceValue" value="60"> <br>
+
+    Стоимость доставки (В продажу)
+    <input type="number" min="0" inputmode="numeric" id="deliveryValue" value="4000"> <br>
+    Стоимость монтажа за м2 (В продажу)
+    <input type="number" min="0" inputmode="numeric" id="montageValue" value="4000"> <br>
+
+    <br>
+    <input type="button" id="calculateButton" value="Рассчитать">
+    <br>
+
+
+    <!-- Стоимость закупа без учета обрезков
+    <div>
+
+    </div> <br>
+
+    Стоимость закупа с учетом обрезков
+    <div>
+
+    </div> <br> -->
+
+    <br><br>
+    <div id="information">
+
+    </div>
+
+
+
+    <br><br><br>
+
+    <!--
+    POP UP
+    -->
+
+    <button id="menuButton">Открыть меню</button>
+
+
+    <div id="popupMenu" class="popup-menu">
+        <div class="container">
+        <header class="header">
+            <h1>Расчет стоимости заказа</h1>
+        </header>
+        
+        <section class="order-details">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Наименование и комплектация</th>
+                        <th>Кол-во (шт.)</th>
+                        <th>Цена за ед. (руб.)</th>
+                        <th>Цена итог (руб.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="nameConstructionTD">1</td>
+                        <td>1</td>                                      
+                        <td id="kpPrice"></td>
+                        <td id="allKpPrice"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="description">
+                                <p id="systemProfil">Система: Alumark</p>
+                                <p id="seriaProfil">Серия: F50</p>
+                                <p id="stoykaProfil"></p>
+                                <p id="rigelProfil"></p>
+                                <p id="stekloProfil"></p>
+                                <p id="dopFunction"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">Доставка</td>
+                        <td>1</td>
+                        <td class="deliveryPrice"></td>
+                        <td class="deliveryPrice2"></td>
+                    </tr>
+                    <tr>
+                        <td class="item">Монтажные работы</td>
+                        <td>1</td>
+                        <td class="montagePrice">12 000,00</td>
+                        <td class="montagePrice2">12 000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="project-summary">
+            <p class="total-cost"></p>
+            <p class="note"></p>
+        </section>
+
+        <section class="footer">
+            <p>Срок изготовления изделий: от 6-7 недель.</p>
+            <p>Срок монтажных работ: 20 рабочих дней.</p>
+            <p>Гарантия на конструкцию: 2 года.</p>
+            <p>Предоплата 80%, остаток 20%</p>
+        </section>
+
+        <footer class="contact-info">
+            <p>С уважением, ООО "АТУРЕН"</p>
+            <p>Водяной Александр</p>
+            <p>Телефон: 8-977-267-82-68</p>
+            <p>Электронная почта: <a href="mailto:vas@aturen.ru">vas@aturen.ru</a></p>
+        </footer>
+    </div>
+    </div>
+
+
+
+    <script src="calculate.js">
+
+    </script>
+
+    </script>
+</body>
+</html>
